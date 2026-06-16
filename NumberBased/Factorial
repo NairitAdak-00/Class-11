@@ -1,1 +1,8 @@
-input num
+num = int(input(Enter a number))
+i = 1
+ans = 1
+for i in range(num):
+    ans*=i
+    i++
+    num--
+print(ans)
