@@ -1,4 +1,4 @@
-input = str(input("Enter a sentence or word"))
+statement = str(input("Enter a sentence or word"))
 word = str(input("Enter the word or letter u wanna count"))
-count = input.count(word)
+count = statement.count(word)
 print(word," appears ",count," times")
