@@ -1,4 +1,4 @@
-word = input("Enter a word/statement")
+word = input("Enter a word or statement")
 length = len(word)
 copy = ""
 for i in range(-1,-length-1,-1):
