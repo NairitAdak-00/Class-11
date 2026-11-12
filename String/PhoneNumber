@@ -1,0 +1,18 @@
+phn = str(input("Enter your phone no. in nnn-nnn-nnnn format"))
+check=0
+for i in range(3):
+    if phn[i].isdigit == False:
+       check=check+1
+if phn[3]!= "-" and phn[7]!="-":
+   check=check+1
+for i in range(4,7):
+    if phn[i].isdigit == False:
+       check=check+1
+for i in range(8,12):
+    if phn[i].isdigit == False:
+       check=check+1
+if check>0:
+   print("Invalid Format!!!!!")
+else:
+   print(phn)
+    
