@@ -1,0 +1,36 @@
+word = str(input("Enter a number below 4000"))
+num = int(word)
+pow = 10**(len(word)-1)
+size = len(word)
+roman = ""
+if size==4:
+   for i in range(num//pow):
+       roman = roman+"M"
+   num=num-(num//pow)*pow
+   pow = pow//10
+   size = size-1
+if size==3:
+   if num//pow>=5:
+      roman = roman+"D"
+   if num//pow!=0:
+      for i in range(num//pow):
+         roman = roman+"C"
+         num=num-(num//pow)*pow
+         pow = pow//10
+         size = size-1
+if size==2:
+   if num//pow>=5:
+      roman = roman+"L"
+   if num//pow!=0:
+      for i in range(num//pow):
+         roman = roman+"X"
+         num=num-(num//pow)*pow
+         pow = pow//10
+         size = size-1
+if size==1:
+   if num//pow>=5:
+      roman = roman+"V"
+   if num//pow!=0:
+      for i in range(num//pow):
+         roman = roman+"I"
+print(roman)
