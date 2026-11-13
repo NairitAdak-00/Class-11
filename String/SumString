@@ -1,0 +1,11 @@
+word = str(input("Enter a string"))
+wordnum = ""
+sum=0
+for i in range(len(word)):
+    if word[i].isdigit()==True:
+       wordnum=wordnum+word[i]
+       sum=int(word[i])+sum
+if sum==0:
+    print("Original String ", word, " has no digits")
+else:
+    print("Original String ", word, " has the digits ", wordnum, " whose sum is ", sum)
