@@ -6,31 +6,40 @@ roman = ""
 if size==4:
    for i in range(num//pow):
        roman = roman+"M"
-   num=num-(num//pow)*pow
+   num=num%pow
    pow = pow//10
    size = size-1
 if size==3:
    if num//pow>=5:
       roman = roman+"D"
-   if num//pow!=0:
+      num = num-500
+   if num//pow==4:
+       roman=roman+"CD"
+   else:
       for i in range(num//pow):
          roman = roman+"C"
-         num=num-(num//pow)*pow
-         pow = pow//10
-         size = size-1
+   num=num%pow
+   pow = pow//10
+   size = size-1
 if size==2:
    if num//pow>=5:
       roman = roman+"L"
-   if num//pow!=0:
+      num = num-50
+   if num//pow==4:
+       roman=roman+"XL"
+   else:
       for i in range(num//pow):
          roman = roman+"X"
-         num=num-(num//pow)*pow
-         pow = pow//10
-         size = size-1
+   num=num%pow
+   pow = pow//10
+   size = size-1
 if size==1:
    if num//pow>=5:
       roman = roman+"V"
-   if num//pow!=0:
+      num = num-5
+   if num//pow==4:
+       roman=roman+"IV"
+   else:      
       for i in range(num//pow):
          roman = roman+"I"
 print(roman)
