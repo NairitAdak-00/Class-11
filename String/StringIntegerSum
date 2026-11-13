@@ -1,0 +1,7 @@
+dig = int(input("Enter a number"))
+word = str(input("Enter a string"))
+wordnum = ""
+for i in range(len(word)):
+    if word[i].isdigit()==True:
+       wordnum=wordnum+word[i]
+print(int(wordnum)+dig)
