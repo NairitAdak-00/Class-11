@@ -1,0 +1,13 @@
+check=1
+while(check>0):
+    word = str(input("Enter a sentence or press 'Q' to quit"))
+    if(word=='q' or word=='Q'):
+        break
+    else:
+        for i in range(len(word)):
+           if(word[i].isupper()==True):
+               print(word[i].lower(), end="")
+           elif(word[i].islower()==True):
+               print(word[i].upper(), end="")
+           else:
+               print(word[i], end="") 
