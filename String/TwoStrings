@@ -1,0 +1,21 @@
+word1 = str(input("Enter a word"))
+word2 = str(input("Enter a word"))
+if(len(word1)>len(word2)):
+   print(word2)
+else:
+   print(word1)
+word1=word2
+spac = len(word1)
+i= 0
+size=len(word1)
+while(size>0):
+   if(size==1):
+     print(word1)
+   else:
+     print(word1[i], end="")
+     for j in range(spac):
+        print(end=" ")
+     print(word[len(word)-i-1])
+     i=i+1
+     spac=spac-2
+     size=size-2
