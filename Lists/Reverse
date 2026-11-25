@@ -1,3 +1,4 @@
-list1 = list((input("Enter some numbers separated by commas").split(',')))
+list1 = list(map(str, input("Enter some numbers separated by commas").split(',')))
 list1.reverse()
 print(list1)
+
