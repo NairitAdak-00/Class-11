@@ -1,0 +1,5 @@
+list1 = list(map(int, input("Enter a list of numbers (separated by commas): ").split(',')))
+add = int(input("Enter an increment-er: "))
+for i in range(len(list1)):
+  list1[i] = list1[i] + add
+print(list1)
